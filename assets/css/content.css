@@ -1,0 +1,11 @@
+.content-section {
+    padding: 120px 0;
+    background: var(--ligth-pink-color);
+}
+
+.content-section .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}

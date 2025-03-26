@@ -1,0 +1,22 @@
+.hero {
+    height: 100vh;
+    background-color: #d64040;
+    font-family: 'Roboto', sans-serif;
+    padding: 10%;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hero .content .right {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.hero .content .left {
+    width: 50%;
+    padding-right: 30px;
+}

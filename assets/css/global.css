@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white-color: #ffffff;
+    --dark-color: #000000;
+    --primary-color: #2a2624;
+    --secondary-color: #e58756;
+    --ligth-color: #f7f7f7;
+    --medium-gray-color: #ccc;
+
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+
+    --border-radius-s: 88px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    --site-max-width: 1300px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button {
+    font-family: var(--body-font);
+    outline: none;
+    border: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    z-index: 5;
+    transition: background-color 0.3s ease;
+}
+
+header.scroll {
+    background-color: var(--ligth-color);
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.section {
+}
+
+.hero-section {
+    background: linear-gradient(150deg, hsl(0, 0%, 22%) 0%, #2a2624 30%);
+    padding-bottom: 0;
+}
+
+.hero-section .hero-container {
+    padding-top: 4rem;
+    row-gap: 3.5rem;
+    color: var(--white-color);
+}
+
+.hero-section .title {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+    color: var(--white-color);
+}
+
+.hero-section .container-right .description {
+    margin: 24px 0 40px;
+    max-width: 60%;
+    font-size: var(--font-size-m);
+}
+
+.hero-section .container-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section .container-left .home__orbe {
+    width: 265px;
+    height: 284px;
+    background: linear-gradient(180deg,
+            hsl(0, 0%, 16%) 93%,
+            hsl(0, 0%, 67%) 100%);
+    border-radius: 135px 135px 0 0;
+}
+
+.hero-section .container-left .home__img {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 125px 125px 12px 12px;
+    display: inline-flex;
+    align-items: flex-end;
+    bottom: -1.5rem;
+    box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+}
+
+main {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 767px) {
+    .hero-section .hero-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 2rem;
+    }
+
+    .hero-section .container-left .home__orbe {
+        align-self: flex-end;
+    }
+
+    .hero-section .hero-container .container-right {
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .hero-section {
+        padding-bottom: 0;
+    }
+
+    .hero-section .hero-container {
+        padding-top: 5rem;
+        column-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 2rem;
+    }
+
+    .hero-section .hero-container .container-right {
+        padding-bottom: 4rem;
+    }
+
+    .hero-section .container-left .home__orbe {
+        width: 504px;
+        height: 611px;
+        border-radius: 256px 256px 0 0;
+    }
+
+    .hero-section .container-left .home__img {
+        width: 472px;
+        height: 634px;
+        border-radius: 263px 236px 12px 12px;
+        bottom: -2.5rem;
+    }
+}
+
+/* .hero-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+.hero-section .hero-container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
+
+.hero-section .title {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+    color: var(--white-color);
+}
+
+.hero-section .container-right .title {
+    font-size: var(--font-size-xxl);
+    color: var(--ligth-color);
+}
+
+.hero-section .container-right .description {   
+    margin: 24px 0 40px;
+    max-width: 70%;
+    font-size: var(--font-size-m);
+} */
