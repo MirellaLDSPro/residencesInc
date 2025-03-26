@@ -12,8 +12,8 @@
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,19 +23,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
 
     <link rel="stylesheet" href="assets/fonts/neue-machina-regular.otf">
 
     <!-- Dependecias -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!-- CSS Local -->
     <link rel="stylesheet" href="assets/css/global.css">
@@ -48,77 +48,78 @@
 </head>
 
 <body>
-    <header class="header" id="header">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/img/mlds-dev-log-white.svg" alt="Logo">
-                <span id="site-name">Nome do Site</span>
+<header class="header" id="header">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/img/mlds-dev-log-white.svg" alt="Logo">
+            <span id="site-name">Nome do Site</span>
+        </div>
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="menu">
+            <li><a class="menu-item" href="#">Menu 1</a></li>
+            <li><a class="menu-item" href="#">Menu 2</a></li>
+            <li><a class="menu-item" href="#">Menu 3</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero-section section">
+        <div class="hero-container container grid">
+            <div class="container-right">
+                <h1 class="title">
+                    Residence
+                </h1>
+                <p class="description">
+                    Encontre residências que combinam com você com muita facilidade. Esqueça todas as
+                    dificuldades
+                    em encontrar uma lar ideal para você.
+                </p>
             </div>
-            <button class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="menu">
-                <li><a class="menu-item" href="#">Menu 1</a></li>
-                <li><a class="menu-item" href="#">Menu 2</a></li>
-                <li><a class="menu-item" href="#">Menu 3</a></li>
-            </ul>
-        </nav>
-    </header>
+            <div class="container-left">
+                <div class="home__orbe"></div>
 
-    <main>
-        <section class="hero-section section">
-            <div class="hero-container container grid">
-                <div class="container-right">
-                    <h1 class="title">
-                        Residence
-                    </h1>
-                    <p class="description">
-                        Encontre residências que combinam com você com muita facilidade. Esqueça todas as
-                        dificuldades
-                        em encontrar uma lar ideal para você.
-                    </p>
-                </div>
-                <div class="container-left">
-                    <div class="home__orbe"></div>
-
-                    <div class="home__img">
-                        <img src="https://jonathancosta746.github.io/Imobiliaria-Landing-Page/assets/images/home.jpg"
-                            alt="">
-                    </div>
-                </div>
-        </section>
-
-        <section class="parceiros-section">
-            <h2 class="section-title">Parcerias</h2>
-            <div class="section-content">
-                <div class="slider-container swiper">
-                    <div class="slider-wrapper">
-                        <ul class="parceiros-list swiper-wrapper">
-                            <li class="parceiro swiper-slide">
-                                <img src="assets/img/mlds-dev-log.svg" alt="parceiro 1" class="parceiro-img">
-                            </li>
-                            <li class="parceiro swiper-slide">
-                                <img src="assets/img/mlds-dev-log.svg" alt="parceiro 1" class="parceiro-img">
-                            </li>
-                            <li class="parceiro swiper-slide">
-                                <img src="assets/img/mlds-dev-log.svg" alt="parceiro 1" class="parceiro-img">
-                            </li>
-                        </ul>
-                        <div class="swiper-slide-button swiper-pagination"></div>
-                        <div class="swiper-slide-button swiper-button-prev"></div>
-                        <div class="swiper-slide-button swiper-button-next"></div>
-                    </div>
+                <div class="home__img">
+                    <img src="https://jonathancosta746.github.io/Imobiliaria-Landing-Page/assets/images/home.jpg"
+                         alt="">
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/header.js"></script>
+    <section class="parceiros-section">
+        <h2 class="section-title">Parcerias</h2>
+        <div class="parceiros-container container">
+            <div class="slider-container swiper">
+                <div class="slider-wrapper">
+                    <ul class="parceiros-list swiper-wrapper">
+                        <li class="parceiro swiper-slide">
+                            <img src="assets/img/mlds-dev-log.svg" alt="parceiro 1" class="parceiro-img">
+                        </li>
+                        <li class="parceiro swiper-slide">
+                            <img src="assets/img/mlds-dev-log.svg" alt="parceiro 1" class="parceiro-img">
+                        </li>
+                        <li class="parceiro swiper-slide">
+                            <img src="assets/img/mlds-dev-log.svg" alt="parceiro 1" class="parceiro-img">
+                        </li>
+                    </ul>
+                    <div class="swiper-slide-button swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/header.js"></script>
 </body>
 
 </html>
