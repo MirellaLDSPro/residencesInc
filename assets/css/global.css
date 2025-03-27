@@ -15,7 +15,7 @@ html {
     --primary-color: #2a2624;
     --secondary-color: #e58756;
     --ligth-color: #f7f7f7;
-    --medium-gray-color: #ccc;
+    --medium-gray-color: #949393;
 
     --font-size-s: 0.9rem;
     --font-size-n: 1rem;
@@ -23,6 +23,7 @@ html {
     --font-size-l: 1.5rem;
     --font-size-xl: 2rem;
     --font-size-xxl: 2.3rem;
+    --biggest-font-size: 4rem;
 
     --font-weight-normal: 400;
     --font-weight-medium: 500;
@@ -77,12 +78,19 @@ li {
 
 .container {
     max-width: 1024px;
-    padding: 10% 5% 0;
+    width: 100%;
+    padding: 8% 5% 0;
 }
 
 .section {
     display: flex;
     justify-content: center;
+}
+
+.section_title {
+    font-size: 2.25rem;
+    color: #1f2f70;
+    font-weight: var(--font-weight-semi-bold);
 }
 
 .hero-section {
@@ -97,7 +105,7 @@ li {
 }
 
 .hero-section .title {
-    font-size: var(--font-size-xxl);
+    font-size: var(--biggest-font-size);
     font-weight: var(--font-weight-bold);
     line-height: 120%;
     color: var(--white-color);
@@ -109,8 +117,8 @@ li {
 
 .hero-section .container-right .description {
     margin: 24px 0 40px;
-    max-width: 60%;
     font-size: var(--font-size-m);
+    color: #b8bbc7;
 }
 
 .hero-section .container-left {
@@ -123,9 +131,7 @@ li {
 .hero-section .container-left .home__orbe {
     width: 265px;
     height: 284px;
-    background: linear-gradient(180deg,
-    hsl(0, 0%, 16%) 93%,
-    hsl(0, 0%, 67%) 100%);
+    background: linear-gradient(180deg, hsl(0deg 0% 10% / 55%) 93%, hsl(0, 0%, 67%) 100%);
     border-radius: 135px 135px 0 0;
 }
 
@@ -161,5 +167,22 @@ li {
 
     .hero-section .container-left .home__img {
         bottom: -1.5rem;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .hero-section .container-left .home__orbe {
+        width: 504px;
+        height: 611px;
+        border-radius: 256px 256px 0 0;
+    }
+
+    .hero-section .container-left .home__img {
+        display: inline-flex;
+        align-items: flex-end;
+        width: 445px;
+        height: 634px;
+        border-radius: 263px 236px 12px 12px;
+        bottom: -2.5rem;
     }
 }
