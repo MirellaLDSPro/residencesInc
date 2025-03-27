@@ -15,7 +15,7 @@ html {
     --primary-color: #2a2624;
     --secondary-color: #e58756;
     --ligth-color: #f7f7f7;
-    --medium-gray-color: #ccc;
+    --medium-gray-color: #949393;
 
     --font-size-s: 0.9rem;
     --font-size-n: 1rem;
@@ -78,12 +78,19 @@ li {
 
 .container {
     max-width: 1024px;
-    padding: 10% 5% 0;
+    width: 100%;
+    padding: 8% 5% 0;
 }
 
 .section {
     display: flex;
     justify-content: center;
+}
+
+.section_title {
+    font-size: 2.25rem;
+    color: #1f2f70;
+    font-weight: var(--font-weight-semi-bold);
 }
 
 .hero-section {
