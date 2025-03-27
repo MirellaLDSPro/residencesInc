@@ -1,5 +1,4 @@
 .parceiros-section {
-    padding: 50px 0 100px;
     background: var(--ligth-color);
 }
 
@@ -17,10 +16,7 @@
 }
 
 .parceiros-section .parceiro .parceiro-img {
-    width: 180px;
-    height: 180px;
     object-fit: cover;
-    margin-bottom: 50px;
     border-radius: var(--border-radius-circle);
 }
 
