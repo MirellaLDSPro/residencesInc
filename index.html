@@ -43,6 +43,8 @@
     <link rel="stylesheet" href="assets/css/content.css">
     <link rel="stylesheet" href="assets/css/parceitos.css">
     <link rel="stylesheet" href="assets/css/catalogo.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/information.css">
 
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -54,7 +56,7 @@
     <nav class="navbar">
         <div class="logo">
             <img src="assets/img/mlds-dev-log-white.svg" alt="Logo">
-            <span id="site-name">Nome do Site</span>
+            <span id="site-name">Residences</span>
         </div>
         <button class="menu-toggle">
             <span></span>
@@ -62,9 +64,9 @@
             <span></span>
         </button>
         <ul class="menu">
-            <li><a class="menu-item" href="#">Menu 1</a></li>
-            <li><a class="menu-item" href="#">Menu 2</a></li>
-            <li><a class="menu-item" href="#">Menu 3</a></li>
+            <li><a class="menu-item" href="#">Home</a></li>
+            <li><a class="menu-item" href="#">Informações</a></li>
+            <li><a class="menu-item" href="#">Contato</a></li>
         </ul>
     </nav>
 </header>
@@ -74,7 +76,7 @@
         <div class="hero-container container">
             <div class="container-right">
                 <h1 class="title">
-                    Residence
+                    Residences
                 </h1>
                 <p class="description">
                     Encontre residências que combinam com você com muita facilidade. Esqueça todas as
@@ -213,6 +215,136 @@
                     <div class="swiper-slide-button swiper-pagination"></div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="information-section section">
+        <div class="information-container container">
+            <div class="contact__data">
+                <div class="info">
+                    <span class="section_subtitle">Contato</span>
+                    <h2 class="product_title">Entre em contato</h2>
+                </div>
+                <p class="contact_description">
+                    É um problema encontrar a casa dos sonhos? Precisa de ajuda para comprar sua primeira casa? Ou
+                    precisa
+                    de uma consultoria para investir em imóveis? Entre em contato conosco.
+                </p>
+            </div>
+
+            <div class="information-content">
+                <div class="contact__card">
+                    <div class="contact_card-box">
+                        <div class="contact__card-info">
+                            <i class='bx bxs-phone-call'></i>
+                            <div>
+                                <h3 class="contact__card-title">
+                                    Telefone
+                                </h3>
+                                <p class="contact__card-description">
+                                    81 92002-4830
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="tel:+5581920024830">
+                            <button class="contact__card-button">
+                                Ligue Agora
+                            </button>
+                        </a>
+                    </div>
+                    <div class="contact_card-box">
+                        <div class="contact__card-info">
+                            <i class='bx bxl-whatsapp'></i>
+                            <div>
+                                <h3 class="contact__card-title">
+                                    Chat
+                                </h3>
+                                <p class="contact__card-description">
+                                    +55 81 92002-4830
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5581920024830" target="_blank">
+                            <button class="contact__card-button">
+                                WhatsApp
+                            </button>
+                        </a>
+                    </div>
+                    <div class="contact_card-box">
+                        <div class="contact__card-info">
+                            <i class='bx bxs-envelope'></i>
+                            <div>
+                                <h3 class="contact__card-title">
+                                    E-mail
+                                </h3>
+                                <p class="contact__card-description">
+                                    contato@residences.com
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="mailto:contato@residences.com">
+                            <button class="contact__card-button">
+                                Mensagem
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact__images">
+                    <div class="contact__orbe"></div>
+                    <div class="contact__img">
+                        <img src="/assets/img/people_contact.jpg" alt="Contato"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section section">
+        <div class="contact-container container">
+            <div class="info">
+                <h2 class="product_title">Envie uma mensagem</h2>
+            </div>
+            <p>Mande uma mensagem que entraremos em contato o mais breve possivel.</p>
+            <form class="form_contact">
+                <div class="form_group">
+                    <label for="name">Nome</label>
+                    <input type="text" placeholder="Digite seu nome" name="Nome do Cliente" id="name" required>
+                </div>
+                <div class="form_group">
+                    <label for="number">Telefone</label>
+                    <input type="number" placeholder="Digite seu telefone" name="Numero de Telefone" id="number"
+                           required>
+                </div>
+                <div class="form_group">
+                    <label for="return">Selecione a forma de retorno</label>
+                    <select name="return" id="return" required>
+                        <option value="ligação-durante-manha" required>
+                            Ligação durante o período da manhã
+                        </option>
+                        <option value="ligação-durante-tarde">
+                            Ligação durante o período da tarde
+                        </option>
+                        <option value="ligação-durante-noite">
+                            Ligação durante o período da noite
+                        </option>
+                        <option value="whatsApp">
+                            WhatsApp
+                        </option>
+                        <option value="email">
+                            E-mail
+                        </option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="Mensagem" id="mensagem" rows="6"
+                              placeholder="Adicione uma mensagem" required></textarea>
+                </div>
+            </form>
         </div>
     </section>
 </main>

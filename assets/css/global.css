@@ -15,7 +15,11 @@ html {
     --primary-color: #2a2624;
     --secondary-color: #e58756;
     --ligth-color: #f7f7f7;
+    --ligth-pink-color: #ffeeee;
     --medium-gray-color: #949393;
+    --body-text-color: #6c7493;
+    --first-color-lighten: hsl(228, 100%, 97%);
+    --section-title-color: #3858d6;
 
     --font-size-s: 0.9rem;
     --font-size-n: 1rem;
@@ -79,7 +83,7 @@ li {
 .container {
     max-width: 1024px;
     width: 100%;
-    padding: 8% 5% 0;
+    padding: 8% 0 0;
 }
 
 .section {
