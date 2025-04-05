@@ -17,7 +17,8 @@
 
 .parceiros-section .parceiro .parceiro-img {
     object-fit: cover;
-    border-radius: var(--border-radius-circle);
+    width: 80px;
+    /* border-radius: var(--border-radius-circle); */
 }
 
 .parceiros-section .swiper-pagination-bullet {
