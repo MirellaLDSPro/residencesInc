@@ -31,6 +31,12 @@
     box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25%);
 }
 
+.contact__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .contact__description{
     font-size: var(--font-size-s);
     margin-bottom: 2.5rem;
@@ -127,11 +133,6 @@
 
     .contact__card-info {
         justify-content: center; /* Centraliza os ícones e textos */
-    }
-
-    .contact__img img {
-        max-width: 100%; /* Garante que a imagem não ultrapasse o container */
-        height: auto;
     }
 }
 
